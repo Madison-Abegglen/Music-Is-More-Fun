@@ -7,7 +7,14 @@ const itunesService = new ItunesService()
 function drawSongs(results) {
   console.log(results)
   //YOUR CODING STARTS HERE
+  // title, albumArt, artist, collection, price, preview
+  let template = ''
+  for (let i = 0; i < results.length; i++) {
+    let song = results[i];
+    template += `
 
+    `
+  }
 
 
 }

@@ -12,18 +12,28 @@
 </head>
 
 <body>
-  <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-    <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-    <div class="form-group">
-      <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-      <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
-    </div>
-  </form>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- SEARCH BY ARTIST FORM BELOW HERE -->
+      <div class="col-4 form">
+        <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+          <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+          <div class="form-group">
+            <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
+            <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+          </div>
+        </form>
+      </div>
 
-  <div id="songs">
+
+    </div>
+
+
+    <!-- WHERE THE SONGS WILL BE DRAWN TO PAGE -->
+    <div id="songs" class="row">
+    </div>
 
   </div>
-
 
   <!-- SCRIPT TAGS BELOW HERE  -->
 
